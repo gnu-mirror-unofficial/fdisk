@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>GNU Parted - Summer of Code 2006 Ideas</title>
+</head>
+<body>
+    <h1>GNU fdisk</h1>
+    <p>GNU fdisk aims to provide alternate command-line interfaces to
+    <a href="http://www.gnu.org/software/parted">libparted</a>, the
+    GNU project's partitioning library.</p>
+    <p>It aims to provide several programs (this list may be expanded to include other
+    fdisk versions; for example, FreeBSD fdisk):</p>
+    <ul>
+            <li><em>lfdisk:</em> a facsimile of Linux fdisk 2.12</li>
+            <li><em>gfdisk:</em> a full-featured fdisk-style interface to libparted</li>
+            <li><em>cfdisk:</em> a cfdisk-style (curses) interface to libparted</li>
+    </ul>
+    <p>The standard interface offered via the 'fdisk' link is 'gfdisk'.</p>
+    <p>For a list of supported file systems and partition tables, please see the
+    <a href="http://www.gnu.org/software/parted">GNU Parted</a> web site.
+
+    <hr />
+
+    <p>Students may begin submitting their proposals beginning May 1st at
+    the
+    <a href="http://code.google.com/summerofcode.html">Google SoC website</a>.
+    If none of the following ideas do not interest you, feel free to propose any
+    other ideas that you think will add some value to GNU fdisk. Please direct
+    proposals and questions to 
+    <a href="mailto:polzer@gnu.org">Leslie P. Polzer</a>.
+    </p>
+
+    <p><strong>Important notice:</strong> you do NOT need to be an expert in
+    partitioning and file systems.  You will get a mentor that is proficient with
+    libparted and those topics.</p>
+
+    <hr />
+
+    <h3>Finish lfdisk</h3>
+    <p>
+    This task consists of two subtasks:
+    <ol>
+            <li>Make the 'lfdisk' interface as similar as possible to Linux fdisk
+            version 2.12 (from the util-linux package).</li>
+            <li>Fix libparted's BSD disk label support.</li>
+    </ol>
+    </p>
+
+    <h3>Create gfdisk</h3>
+    <p>
+    Create a full-featured Linux fdisk style interface to libparted.
+    It should support all things 'parted' does.
+    </p>
+    <p>You may use the source of 'lfdisk' and 'parted' for this.</p>
+
+    <h3>Create cfdisk</h3>
+    <p>
+    Create a Linux cfdisk (Curses) style interface to libparted.
+    It should support all things Linux cfdisk (from the util-linux packages)
+    does.</p>
+    <p>You may use the source of 'cfdisk' and 'parted' for this.</p>
+
+</body>
+</html>
